@@ -1,0 +1,126 @@
+/*HEADER, NAVBAR & SHOWCASE*/
+
+/* Header */
+header {
+    background: var(--bg-gradient-1);
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    color: #fff;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex; /*will display the li items horizontally*/
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+    /*when we have flex in navbar then we have diff settings*/
+    justify-content: space-between;
+}
+
+/* Showcase */
+.showcase {
+    top: -20px;
+    height: 600px;
+    color: #fff;
+    position: relative; /*so we can position anything else absolute in it if we want*/  
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+}
+
+.showcase-text {
+    position: relative;
+    top: -2rem;
+    animation: slideInFromLeft 1.2s ease-in; 
+    margin-right: 1.5rem;
+    /*slideInFromLeft is our custom animation*/
+}
+
+.showcase-img {
+    position: relative;  /*to add top property*/
+    top: 0px;
+    height: 105%;
+    width: 105%;
+    padding: 0;
+    z-index: 100;
+    justify-self: flex-end;  /*push the img to the right*/
+    animation: slideInFromRight 1.2s ease-in; 
+}
+
+.showcase .btn::before {
+    border-color: var(--main-color-5);
+    border-radius: 30px;
+    width: 0;
+    height: 100%;
+    background: var(--bg-gradient-2);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.5s ease;
+    border-color: var(--main-color-5);
+}
+
+.showcase .btn:hover::before {
+    width: 100%;
+}
+
+.showcase .btn:hover {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    /*will be positioned absolute in the relative showcase section*/
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background:#fff;
+    transform: skewY(-2deg);
+    -webkit-transform: skewY(-2deg); /*for Chrome and Safari*/
+    -moz-transform: skewY(-2deg); /*for Mozilla*/
+    -ms-transform: skewY(-2deg); /*for Internet Explorer*/
+}
+
+
+/* Sticky menu */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(118, 12, 253, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease-in-out;
+}

@@ -1,0 +1,335 @@
+/* SERVICES */
+html {
+    scroll-behavior: smooth;
+}
+
+.services {
+    height: 800px;
+    background-color: #fff;
+}
+
+.services h1 {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    font-weight: bolder;
+    color: var(--main-color-3);
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: var(--main-color-2);
+}
+
+.services .card {
+    width: 14rem;
+    height: 14rem;
+    margin: auto;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease-in-out;
+}
+
+.services .card:first-child:hover,
+.services .card:nth-child(6):hover {
+    box-shadow: 0 7px 12px rgba(118, 12, 253, 0.3);
+    transition: box-shadow transform 0.5s ease-in-out;
+    transform: translateY(-15px);
+}
+
+.services .card:nth-child(3):hover,
+.services .card:nth-child(5):hover {
+    box-shadow: 0 7px 12px rgba(42, 152, 240, 0.3);
+    transition: box-shadow transform 0.5s ease-in-out;
+    transform: translateY(-15px);
+}
+
+.services .card:nth-child(2):hover,
+.services .card:nth-child(4):hover {
+    box-shadow: 0 7px 12px rgba(244, 124, 34, 0.3);
+    transition: box-shadow transform 0.5s ease-in-out;
+    transform: translateY(-15px);
+}
+
+.services .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 0.33fr;
+    grid-column-gap: 0;
+    height: 800px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.services .card img{
+    width: 7rem;
+    height: 7rem;
+    margin: auto;
+}
+
+
+
+/* ABOUT */
+
+.about {
+    padding: 2rem 0;
+    margin-left: 0;
+    margin-bottom: 12rem;
+    height: 600px;
+}
+
+.about .row .col-md-6 .about-img img {
+    position: relative;
+    width: 120%;
+    border-radius: 0.2rem;
+    left: -5rem;
+    /*box-shadow: 0px 15px 22px rgba(0, 0, 0, 0.1);*/
+}
+
+.about .row .col-md-6:last-child {
+    position: relative;
+}
+
+.about .row .col-md-6 .panel {
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    right: -2rem;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 3rem 7rem;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.09);
+    font-family: var(--Rubik-font);
+    z-index: -1;
+}
+
+.about .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+    color: var(--main-color-3);
+}
+
+.about .row .col-md-6 .panel p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    color: var(--main-color-2);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about .row .col-md-6 .panel p:last-child {
+    margin-bottom: 2rem;
+}
+
+/* NUMBERS */
+
+.numbers {
+    width: 100%;
+    height: 600px;
+}
+
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url('../assets/group_photo_2.jpg');
+    background-color: tomato;
+    /*https://www.freepik.com/photos/business*/
+    background-position: -14rem -18rem;
+    background-size: 120%;
+    position: relative;
+}
+
+.cover .content {
+    background: rgba(20, 117, 197, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+
+.cover .content>h1 {
+    font-family: var(--Rubik-font);
+    font-size: 6vmin;
+    /*vmin makes font responsive*/
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+}
+
+/*animated numbers*/
+.numbers .number-card {
+    font-family: var(--Rubik-font);
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 15rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: .5em;
+}
+
+.numbers {
+    margin-top: -15vmin;
+    /*pun dreptunghiurile peste poza*/
+}
+
+.numbers .number-card h2 {
+    font-size: 4rem;
+    color: var(--main-color-3);
+}
+
+.numbers .number-card p {
+    font-size: 4vmin;
+    color: var(--main-color-2);
+}
+
+
+/* TESTIMONIALS */
+
+.testimonials {
+    width: 85%;
+    height: 600px;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.testimonials h1 {
+    font-family: var(--Rubik-font);
+    text-align: center;
+    margin-bottom: 5rem;
+    color: var(--main-color-3);
+    font-weight: bolder;
+}
+
+.testimonial {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonial p {
+    margin: auto 1.2rem;
+    color: var(--main-color-2);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.testimonial .container {
+    display: block;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.testimonial img {
+    display: block;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+}
+
+.testimonial .name {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 20px 0;
+    color: var(--main-color-2);
+}
+
+.testimonials .stars {
+    color: var(--main-color-4);
+    margin-bottom: 20px;
+}
+
+/* CONTACT FORM */
+
+.contact {
+    width: 100%;
+    height: 600px;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.contact h1 {
+    text-align: center;
+    font-family: var(--Rubik-font);
+    font-weight: bolder;
+    color: var(--main-color-3);
+    margin-bottom: 4rem;
+}
+
+.contact-form {
+    width: 45%;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 1.5rem 0;
+    height: 3.5rem;
+    border-radius: 3rem;
+    padding: 20px 30px;
+    border: none;
+    color: #8D8698 !important;
+    font-weight: bolder;
+    font-family: var(--Rubik-font);
+    box-shadow: 0 2px 14px rgba(118, 12, 253, 0.07);
+    -webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact-form .form-control:hover {
+    box-shadow: 0 2px 14px rgba(118, 12, 253, 0.3);
+    transform: scale(1.1);
+}
+
+.contact-form .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: 0 2px 14px rgba(118, 12, 253, 0.3);
+}
+
+.contact-form textarea {
+    height: 7rem;
+}
+
+.contact-form .btn-container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.contact-form .fa-paper-plane {
+    margin-right: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.contact-form .btn {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background: var(--bg-gradient-2);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #B2ABBD !important;
+    font-weight: bolder;
+    font-family: var(--Rubik-font);
+}
+
+:-ms-input-placeholder {  /* Internet Explorer 10-11 */
+    color: #B2ABBD !important;
+    font-weight: bolder;
+    font-family: var(--Rubik-font);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #B2ABBD !important;
+    font-weight: bolder;
+    font-family: var(--Rubik-font);
+}

@@ -1,0 +1,327 @@
+/* MOBILE MENU */
+.mobile-navbar,
+.mobile-links-container {
+    display: none;
+}
+
+.mobile-navbar button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    right: 0;
+    top: 2.5rem;
+    position: absolute;
+    margin-right: 3rem;
+}
+
+.mobile-navbar button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.mobile-navbar i {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1023px) { 
+    .mobile-navbar {
+        display: inline-block;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 1.5rem;
+        left: 0;
+        margin-left: 3rem;
+    }
+
+    .links-container {
+        position: fixed;
+        /*display: none;*/
+        visibility: hidden;
+    }
+
+    .mobile-links-container {
+        position: fixed; 
+        display: none;
+        width: 100%;
+        height: 320px;
+        margin: 6rem 0 0 0;
+        z-index: 9999;
+        text-align: center;
+    }
+
+    .mobile-links-container ul {
+        display: block;     
+    }
+
+    .mobile-links-container ul li {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .mobile-links-container ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background: rgba(118, 12, 253, 0.815);
+        z-index: 9999;
+        transition: all 1.5s ease-in-out;
+    }
+
+    .bigger-sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 420px;
+        background: rgba(118, 12, 253, 0.815);
+        z-index: 9999;
+        transition: all 1.5s ease-in-out;
+    }
+
+    /* Showcase */
+
+    .showcase {
+       top: 5rem;
+       height: 1000px;
+       padding: 0;
+    }
+
+    .showcase .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+
+    .showcase-text {
+        margin: auto;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .showcase-text p {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .showcase-img {
+        top: -5rem;
+        margin: auto;
+        width: 100%;
+        animation: slideInFromBottom 1.2s ease-in; 
+    }
+
+    .showcase-img img {
+        top: 0;
+        height: 90%;
+        width: 98%;
+        filter: blur(3px);
+    }
+
+    /* Services */
+    .services {
+        height: 1000px;
+    }
+
+    .services h1 {
+        margin-top: 10rem;
+    }
+
+    .services .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 0.33fr;
+        grid-column-gap: 0;
+        height: 800px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /* About */
+    .about {
+        height: 800px;
+    }
+
+    .about-img {
+        width: 120%;
+        height: 100%;
+        right: 0;
+        left: 0;
+    }
+
+    .about .row .col-md-6 .panel {
+        left: -12rem;
+        top: 8rem;
+    }
+
+    .about .row .col-md-6 .panel h1 {
+        margin-top: 3rem;
+        margin-left: 10rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Numbers */ 
+
+    .numbers {
+        height: 800px;
+    }
+    .cover {
+        width: 110%;
+        background-position: -5rem -8rem;
+        background-size: 120%;
+    }
+
+    .numbers .container-fluid {
+        width: 40%;
+        margin: auto;
+    }
+
+    .container-fluid .numbers {
+        display: table;
+        position: relative;
+        text-align: center;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        margin-top: 19rem;
+    }
+
+    /* Contact */
+    .contact-form {
+        width: 80%;
+    }
+}
+
+/* Tablets and under */
+@media only screen and (max-width: 767px) { 
+    
+    .navbar .logo {
+        font-size: 2rem;
+    }
+
+    /* Services */
+    .services {
+        height: 1500px;
+        margin-bottom: 5rem;
+    }
+
+    .services .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 0.33fr;
+        grid-column-gap: 0;
+        height: 800px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /* About */
+    .about {
+        height: 1000px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    .about-img {
+        width: 120%;
+        height: 100%;
+        right: 0;
+        left: 0;
+    }
+
+    .about .row .col-md-6 .panel {
+        margin: auto;
+        top: -1.4rem;
+        left: auto;
+        text-align: center;
+    }
+
+    .about h1 {
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0;
+        
+    }
+
+    .about .pt-4 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    /* Numbers */ 
+
+    .numbers .container-fluid {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        margin-top: 8rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .row .col-md-4 {
+        margin: auto;
+        margin-top: 6vmin;
+    }
+
+    footer .container {
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    footer h3 {
+        margin-top: 1rem;
+    }
+
+}
+
+/* Small phones */
+@media only screen and (max-width: 375px) { 
+    .showcase {
+       top: -1rem;
+    }
+
+    .services {
+        margin-top: -3rem;
+    }
+
+    /* About */
+    .about {
+        height: 1000px;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 120%;
+        height: 100%;
+        right: 0;
+        left: 0;
+    }
+
+    .about h1 {
+        justify-self: center;
+    }
+
+    .about .col-md-6:nth-child(2) {
+        left: 4rem;
+    }
+
+    .numbers .container-fluid {
+        width: 95%;
+        margin: auto;
+    }
+
+}
